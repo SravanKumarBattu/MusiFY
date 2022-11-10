@@ -1,0 +1,91 @@
+<app-navbar></app-navbar>
+
+<div class="comp">
+
+  <div class="row">
+
+    <div class="col-5">
+        
+        <ngb-carousel *ngIf="images">
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img [src]="images[0]" alt="Random first slide" />
+            </div>
+            <div class="carousel-caption">
+              <h3>PlayList-1</h3>
+              <button type="button" class="btn btn-success">PlayNow</button>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img [src]="images[1]" alt="Random second slide" />
+            </div>
+            <div class="carousel-caption">
+              <h3>PlayList-2</h3>
+              <button type="button" class="btn btn-success">PlayNow</button>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+              <img [src]="images[2]" alt="Random third slide" />
+            </div>
+            <div class="carousel-caption">
+              <h3>PlayList-3</h3>
+              <button type="button" class="btn btn-success">PlayNow</button>
+            </div>
+          </ng-template>
+        </ngb-carousel>
+
+
+    </div>
+
+    <div class="col-7">
+
+      <div class="browse">
+        <div id="wrapper">
+          <main class="container">
+            <section class="Browse">
+              <h2 class="music">Browse Genres</h2>
+                <button class="orange" type="submit">Pop</button>
+                <button class="orange" type="submit">Rock</button>
+                <button class="orange" type="submit">Hip Hop</button>
+                <button class="orange" type="submit">Indie</button>
+                <button class="orange" type="submit">R&#38;B</button>
+                <button class="orange" type="submit">EDM</button>
+                <button class="orange" type="submit">K-Pop</button>
+                <button class="orange" type="submit">Country</button>
+                <button class="orange" type="submit">Latin</button>
+                <button class="orange" type="submit">Jazz</button>
+                <button class="orange" type="submit">Metal</button>
+                <button class="orange" type="submit">Oldies</button>
+                <button class="orange" type="submit">Classical</button>
+                <button class="orange" type="submit">80's</button>
+                <button class="orange" type="submit">Raggae</button>
+                <button class="orange" type="submit">Musical</button>
+                <a href="songs"> more...</a>
+            </section>
+
+            <section class="Browse">
+                <h2 class="music">Browse Albums</h2>
+                  <button class="orange" type="submit">Album</button>
+                  <button class="orange" type="submit">Album</button>
+                  <button class="orange" type="submit">Album</button>
+                  <button class="orange" type="submit">Album</button>
+                  <button class="orange" type="submit">Album</button>
+                  <button class="orange" type="submit">Album</button>
+                  <button class="orange" type="submit">Album</button>
+                  <button class="orange" type="submit">Album</button>
+                  <button class="orange" type="submit">Album</button>
+                  <button class="orange" type="submit">Album</button>
+                  <button class="orange" type="submit">Album</button>
+                  <button class="orange" type="submit">Album</button>
+                  <button class="orange" type="submit">Album</button>
+                  <button class="orange" type="submit">Album</button>
+                  <button class="orange" type="submit">Album</button>
+                  <a href="songs"> more...</a>
+            </section>
+          </main>
+        </div>
+      </div>
+  </div>
+</div>

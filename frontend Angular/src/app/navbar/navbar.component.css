@@ -1,0 +1,21 @@
+*{
+  color: #fff;
+}
+a.nav-link{
+  width: 100%;
+}
+
+
+.nav-item :hover{
+  color:green;
+}
+.h4{
+  display: inline;
+}
+.collapse{
+  width: 100%;
+}
+
+i{
+  padding-right: 0.2rem;
+}

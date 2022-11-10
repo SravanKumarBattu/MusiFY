@@ -1,0 +1,39 @@
+<div class="cont">
+  <app-navbar></app-navbar><br>
+<h2>Currently Streaming MusiFy Songs</h2>
+ <table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Song Name</th>
+      <th scope="col"></th>
+      <th>Play</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let song of SongsData">
+      <th scope="row">{{song.s_id}}</th>
+      <td>{{song.sName}}</td>
+      <td><img src={{song.sUrl}} alt="" srcset=""></td>
+      <td>
+        <audio controls controls controlsList="nodownload noplaybackrate" style="width: 10rem;">
+
+          <source src={{song.sSrc}} type="audio/mpeg">
+          Your browser does not support the audio tag.
+        </audio>
+      </td>
+      <td>
+        <button class="btn btnp" (click)= "[ add() , setter(song.s_id)]"> <i class="fa fa-plus"></i> </button>
+      </td>
+      <td>
+
+      <button class="btn btns"> <i class="fa fa-heart"></i> </button>
+
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>

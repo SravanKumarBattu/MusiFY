@@ -1,0 +1,49 @@
+/* @media screen and (max-width:360px){
+
+  .col-6, .col-8, .imag{
+    width: auto;
+  }
+} */
+.row{
+  padding: 2rem;
+}
+.col-5{
+  width: 30rem;
+  height: 35rem;
+  padding: auto;
+}
+img{
+  width: 30rem;
+  height: 30rem;
+}
+.col-7{
+  padding-left: 4rem;
+  width: 45rem;
+}
+
+.comp{
+  height: 100%;
+}
+
+
+
+.orange:hover{
+  background: #1DB954;
+	border-color: red;
+  color:#191414;
+}
+
+.orange{
+  color: white;
+  font-size: 20px;
+	border-color: orange;
+	border-radius: 0.5rem;
+	border-width: 1px;
+  margin: 0 0.4rem 0.4rem;
+}
+
+
+
+button{
+  padding: 0.4rem;
+}

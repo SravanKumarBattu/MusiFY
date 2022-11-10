@@ -1,0 +1,25 @@
+
+<div class="cont">
+  <app-navbar></app-navbar>
+  <h2>User Name : {{data[0].u_name}}</h2>
+<div class="container" >
+  <div class="row">
+        <div class="col-md-4 card" *ngFor="let playList of (data[0].playlists)" >
+          <div >
+            <img class="card-img-top" src={{data[0].imgSrc[0]}} alt="Card image cap" >
+          </div>
+
+        <div class="card-body">
+          <h3 class="card-title">PlayList {{playList}}<h1>{{data[0].playlistName[playList - 1]}}</h1></h3>
+          <br><br><br>
+          <a routerLink="/playlists" class="btn btn-primary" (click)="setPlayList(playList)" >Play Now</a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+

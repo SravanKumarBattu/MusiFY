@@ -1,0 +1,50 @@
+h2{
+  text-align: center;
+  color: #1DB954;
+}
+.songs{
+  height: 100%;
+  text-align: center;
+}
+audio{
+  background-color: #212529;
+}
+
+/* PLAYLIST */
+.playlist {
+	margin-top: 18rem;
+	padding: 12px;
+  text-align: center;
+}
+th, td{
+  text-align: center;
+  border-color: #fff;
+}
+
+table{
+  margin-top: 2rem;
+}
+img{
+  width: 5rem;
+  height: 4rem;
+}
+
+
+
+.btnp{
+  background-color: red;
+}
+.btns{
+  background-color: #1DB954;
+}
+.fa-heart{
+  background-color: #1DB954;
+}
+.fa-plus
+{
+  background-color: red;
+}
+
+audio::-webkit-media-controls-timeline{
+    display : none;
+}

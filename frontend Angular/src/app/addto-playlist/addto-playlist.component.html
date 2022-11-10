@@ -1,0 +1,25 @@
+<div class="cont">
+<!-- <button routerLink="newplaylist" class="btn btn-primary">Create a New PlayList</button> -->
+
+<button routerLink="newplaylist"  class="btn btn-primary" mat-dialog-close >Create New Playlist</button>
+<br><br>
+
+<label for="">Add to existing playlist</label>
+<br><br>
+
+<div class="container" >
+  <form [formGroup]="pForm" class='form-inline selectionForm ele' (submit)="sub(pForm)">
+    <p>Select PlayList and submit:</p>
+    <div class="formGroup el" *ngFor = "let playlist of data[0].playlistName">
+      <input type="radio"  formControlName="playlistNum" value={{data[0].playlistName.indexOf(playlist)}}>
+      <label >{{playlist}}</label><br>
+    </div>
+
+    <div class="text-center">
+      <button type="submit"  class="btn btn-danger btn-lg submitBtn" id="submitSelection" >Add</button>
+    </div>
+
+
+  </form>
+
+</div>

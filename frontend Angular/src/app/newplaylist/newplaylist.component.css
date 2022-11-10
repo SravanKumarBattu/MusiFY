@@ -1,0 +1,15 @@
+.cont{
+  width: 100%;
+  height: 100%;
+}
+
+.el{
+  padding: 2rem;
+}
+input{
+  width: 50%;
+}
+.el{
+  margin-left: auto;
+  margin-right: auto;
+}

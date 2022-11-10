@@ -1,0 +1,29 @@
+<div class="cont">
+  <app-navbar></app-navbar>
+  <br>
+      <h2>Provide Playlist Details</h2>
+
+<div class="container" >
+      <form [formGroup]="playForm" class='form-inline selectionForm ele' (submit)="addData(playForm)">
+
+        <div class="formGroup el">
+          <label for="name">Playlist Name:</label><br>
+          <input type="text" class="FormControl" formControlName="PlayListName" id='' placeholder="Song Name" required="required"/>
+        </div>
+
+        <div class="formGroup el">
+          <label for="name">Image Url:</label><br>
+          <input type="text" class="FormControl" formControlName="ImageUrl" id='' placeholder="Image Url" required=""/>
+        </div>
+        <div class="text-center">
+          <button type="submit"  class="btn btn-danger btn-lg submitBtn" id="submitSelection" >Create</button>
+        </div>
+
+
+      </form>
+
+    </div>
+    <!-- </div>
+</div> -->
+
+</div>
